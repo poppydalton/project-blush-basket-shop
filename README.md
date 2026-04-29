@@ -1,108 +1,102 @@
 # BlushBasket
 A web application for browsing and searching clothing styles across multiple brands in one place. 
 
-# Authorship & Attribution:
-Created by Poppy Dalton - Front-End Web Development
+# Authorship & Attribution
+Created by Poppy Dalton
 
-This project was built using HTML, CSS, JavaScript, and Bootstrap.
-Development was guided by course examples and documentation resources.
+[My Github Profile](https://github.com/poppydalton) 
 
-# Inspiration:
-* Parts of the JavaScript structure and session storage logic were inspired by the BearBot example project used in CIS 376 course.
-* https://github.com/barrycumbie/bearbot
-* ChatGPT was used as a development assistant for minor debugging and implementation questions.
-* Other Inspiration included: Bootstrap, Bootstrap Icons, and Google Fonts.
+# User Story
+As someone constantly looking for new clothing styles, 
+I want to browse and search items by category, 
+so that I can easily compare options and discover items I like without visiting numerous websites.  
 
-# Bootstrap Components:
+# Project Narrative 
+#### What the app does:
+* BlushBasket is a website where users can browse clothes for men and women, search for items, and save their favorite pieces in one place.
+#### Why I chose this:
+* I chose this idea to make shopping easier by putting different clothing options from multiple brands and stores into one simple website instead of having to look at so many different sites.
+#### What was built or improved:
+* I added a Favorites feature that allows users to save and remove clothing items. I also created a Favorites page where saved items are displayed with images, descriptions, and links. Navigation was improved by adding Favorites links in multiple areas of the site, and the favorite button now updates between “Add to Favorites” and “Unadd from Favorites.”
+#### Brief development story:
+* The project started as a basic clothing browsing site. Over time, I added more features like separate pages for men’s and women’s clothing, a search bar, and a Favorites page. I also improved how the site looks and works so it is easier to use on different screen sizes.
+
+# Attributions
+#### Bootstrap Components:
 * https://getbootstrap.com/docs/5.2/components/card/#content-types
 * https://getbootstrap.com/docs/5.2/utilities/shadows/ 
 * https://getbootstrap.com/docs/5.2/components/toasts/ 
 * https://getbootstrap.com/docs/5.2/components/buttons/ 
 * https://getbootstrap.com/docs/5.2/layout/grid/
-
-# Icons:
+#### Icons/Images:
 * https://icons.getbootstrap.com/icons/list/
 * https://icons.getbootstrap.com/icons/github/
-* https://icons.getbootstrap.com/icons/flower3/ 
-
-# Font:
+* https://icons.getbootstrap.com/icons/flower3/
+* Product images were taken from variosu retail websites and product pages.
+#### Font:
 * https://fonts.google.com/specimen/Montserrat+Alternates
-# Tagline:
-Browse popular men's and women's clothing styles across brands without visiting numerous of different websites to find your style.
+#### AI usage: 
+* ChatGPT was used when I ran into errors or bugs in my JavaScript. It helped me understand problems and fix parts of my code while building features like favorites and improving button behavior.
+#### Code Sources:
+* BearBot example project by Cumbie was used as inspiration for session storage and overall app structure: https://github.com/barrycumbie/bearbot
 
-# User Story:
-As someone constantly looking for new clothing styles, 
-I want to browse and search items by category, 
-so that I can easily compare options and discover items I like without visiting numerous websites.  
-
-# Links:
-[Click here for the link to repo](https://github.com/poppydalton/project-blush-basket-shop)
-
-[Click here for the link to deployed app](https://poppydalton.github.io/project-blush-basket-shop/)
-
-# Design:
-
-<img width="2880" height="1468" alt="image" src="https://github.com/user-attachments/assets/855bafd6-4752-40a7-9b19-dc79b01f559a" />
-
-The homepage navigation was inspired by the Hoka website, which separates browsing into Men's and Women's shopping categories to make it easier for users to navigate products. I adapted this idea by creating separate Men's and Women's pages in my application so users can browse clothing styles and search items without having to scroll through unrelated products.
-
-# Model/Inspiration:
-[Design inspiration picture (Hoka reference)](https://github.com/poppydalton/project-blush-basket-shop/issues/2)
-
-I copied the simplicity of "Shop Women's" and "Shop Men's" while keeping the website name visible in the navigation bar.
-I fixed the browsing experience by organizing clothing items into separate category pages, allowing users to focus on either men's or women's clothing without viewing items outside of their selected category.
-I improved the user interface by adding a clear login and logout button to the top right and placing the session page inside the hamburger menu, allowing users to access and manage their session data if they choose to log in.
+# Project Structure
+```
+.
+├── index.html
+├── search.html
+├── assets
+│   ├── docs
+│   └── data
+├── pages
+│   ├── women.html
+│   ├── men.html
+│   ├── login.html
+│   ├── session.html
+│   └── favorites.html
+├── scripts
+│   ├── search-script.js
+│   ├── login-script.js
+│   ├── session-script.js
+│   ├── auth.js
+│   ├── storage.js
+│   └── login-logout.js
+├── styles
+│   └── blushbasket-styles.css
+└── README.md
+``` 
 
 # Code Block:
-This code shows how the website displays clothing items on the page.
-This allows the page to update when the user searches or changes categories, without reloading the page. 
-JavaScript reads the clothing data, creates product cards for each item, and inserts them into the page so the results update when a user searches or selects a category.
+* This code controls the favorites feature.
+* It checks if an item is already saved or not.
+* The updated list is stored in sessionStorage so it stays saved while the user is on the site.
+* This is what allows the “Add to Favorites ❤️” button to toggle between adding and removing items.
 
 ```
-function renderSearchResults(items) {
-    searchResults.innerHTML = '';
+let favorites = JSON.parse(sessionStorage.getItem('favorites')) || [];
 
-    items.forEach(product => {
-        const col = document.createElement('div');
-        col.className = 'col-lg-6 col-md-6 col-sm-12';
-
-        col.innerHTML = `
-            <div class="card blush-product-card shadow-sm h-100">
-                <h3 class="blush-card-title">${product.title}</h3>
-                <p class="blush-card-text">${product.description}</p>
-            </div>
-        `;
-
-        searchResults.appendChild(col);
-    });
+function isFav() {
+    return favorites.some(item => item.title === product.title);
 }
+
+favBtn.addEventListener('click', function () {
+    favorites = JSON.parse(sessionStorage.getItem('favorites')) || [];
+
+    if (isFav()) {
+        favorites = favorites.filter(item => item.title !== product.title);
+    } else {
+        favorites.push(product);
+    }
+
+    sessionStorage.setItem('favorites', JSON.stringify(favorites));
+});
 ```
 
-# Architecture/Infrastructure:
-This application is a front-end web application built using:
-* HTML
-* CSS
-* JavaScript
-* JSON
-* Bootstrap
-* Bootstrap Icons
-* Google Fonts
+# Validation
+TO DO
 
-Product data is stored in a local JSON file and used by JavaScript to generate clothing cards displayed on the page.
-
-Session data includes:
-* Login Status
-* Username
-* Selected Category
-
-# Verification:
-The application was tested in:
-* Google Chrome
-* Safari
-* Desktop Screen Sizes
-* Mobile Screen Widths
-
-No major issues were found during testing.
+# Future Improvements:
+TO DO
 
 
 
