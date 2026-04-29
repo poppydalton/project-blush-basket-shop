@@ -1,5 +1,5 @@
 # BlushBasket
-A web application for browsing and searching clothing styles across multiple brands in one place. 
+A web application for browsing clothing styles across multiple platforms in one place. 
 
 # Authorship & Attribution
 Created by Poppy Dalton
