@@ -93,7 +93,9 @@ favBtn.addEventListener('click', function () {
 ```
 
 # Validation
-TO DO
+[Click Here for Nu Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpoppydalton.github.io%2Fproject-blush-basket-shop%2F)
+
+[Click Here for WAVE Accessibility Report](https://wave.webaim.org/report#/https://poppydalton.github.io/project-blush-basket-shop/)
 
 # Future Improvements:
 TO DO
