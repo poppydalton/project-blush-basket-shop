@@ -98,8 +98,8 @@ favBtn.addEventListener('click', function () {
 [Click Here for WAVE Accessibility Report](https://wave.webaim.org/report#/https://poppydalton.github.io/project-blush-basket-shop/)
 
 # Future Improvements:
-TO DO
-
+[Github Milestone 👉 Sprint 99](https://github.com/poppydalton/project-blush-basket-shop/milestones)
+* Includes known issues/bugs and future improvements.
 
 
 
