@@ -27,7 +27,7 @@ jobs:
         env:
           SSH_USER: poppydalton545
           SSH_HOST: 34.118.173.217
-          APP_DIR: app
+          APP_DIR: app/server
           PM2_NAME: app
         run: |
           ssh -i ~/.ssh/id_rsa -T "$SSH_USER@$SSH_HOST" <<EOF
