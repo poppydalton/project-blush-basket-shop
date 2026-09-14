@@ -1,46 +1,51 @@
 # BlushBasket
-A web application for browsing clothing styles across multiple platforms in one place. 
+> A web application for browsing clothing styles across multiple platforms in one place. 
 
-# Authorship & Attribution
-Created by Poppy Dalton
 
-[My Github Profile Link](https://github.com/poppydalton) 
+### authorship + version
+`@poppydalton` \| `2026-09-15` \| `GOLF`
 
-# User Story
-As someone constantly looking for new clothing styles, 
-I want to browse and search items by category, 
-so that I can easily compare options and discover items I like without visiting numerous websites.  
 
-# Project Narrative 
-#### What the app does:
-* BlushBasket is a website where users can browse clothes for men and women, search for items, and save their favorite pieces in one place.
-#### Why I chose this:
-* I chose this idea to make shopping easier by putting different clothing options from multiple brands and stores into one simple website instead of having to look at so many different sites.
-#### What was built or improved:
-* I added a Favorites feature that allows users to save and remove clothing items. I also created a Favorites page where saved items are displayed with images, descriptions, and links. Navigation was improved by adding Favorites links in multiple areas of the site, and the favorite button now updates between “Add to Favorites” and “Unadd from Favorites.”
-#### Brief development story:
-* The project started as a basic clothing browsing site. Over time, I added more features like separate pages for men’s and women’s clothing, a search bar, and a Favorites page. I also improved how the site looks and works so it is easier to use on different screen sizes.
+### deployments, codebase, & repo features
+resource                     link
+  ---------------------------- ----------------------
+  PROD codebase                [`main`](URL)
+  PROD server                  [GCP](URL)
+  DEV codebase                 [`dev`](URL)
+  DEV server                   [Render](URL)
+  docs                         [`docs/`](URL)
+  published docs               [GitHub Pages](URL)
+  CI/CD workflow               [`deploy.yml`](URL)
+  successful PROD deployment   [GitHub Action](URL)
+  resolved GOLF issue          [issue \#](URL)
 
-# Attributions
-#### Bootstrap Components:
-* https://getbootstrap.com/docs/5.2/components/card/#content-types
-* https://getbootstrap.com/docs/5.2/utilities/shadows/ 
-* https://getbootstrap.com/docs/5.2/components/toasts/ 
-* https://getbootstrap.com/docs/5.2/components/buttons/ 
-* https://getbootstrap.com/docs/5.2/layout/grid/
-#### Icons/Images:
-* https://icons.getbootstrap.com/icons/list/
-* https://icons.getbootstrap.com/icons/github/
-* https://icons.getbootstrap.com/icons/flower3/
-* Product images were taken from variosu retail websites and product pages.
-#### Font:
-* https://fonts.google.com/specimen/Montserrat+Alternates
-#### AI usage: 
-* ChatGPT was used when I ran into errors or bugs in my JavaScript. It helped me understand problems and fix parts of my code while building features like favorites and improving button behavior.
-#### Code Sources:
-* BearBot example project by Cumbie was used as inspiration for session storage and overall app structure: https://github.com/barrycumbie/bearbot
 
-# Project Structure
+### user story
+- As someone constantly looking for new clothing styles, 
+- I want to browse and search items by category, 
+- so that I can easily compare options and discover items I like without visiting numerous websites.  
+
+### narrative 
+In 2--4 sentences, briefly describe your GOLF infrastructure and whatyou built/deployed.
+
+### architecture
+``` text
+LOCAL
+  │
+  ▼
+GitHub
+  │
+  ├── dev  ──► Render ─────────► DEV
+  │
+  └── main ──► GitHub Actions ─► GCP ──► PROD
+```
+
+### stack
+`HTML/CSS/JS` \| `Node.js` \| `Express` \| `Git/GitHub` \| `Render` \|
+`GCP` \| `Linux` \| `Nginx` \| `PM2` \| `Certbot` \| `GitHub Actions`
+
+
+### project structure
 ```
 .
 ├── index.html
@@ -65,34 +70,10 @@ so that I can easily compare options and discover items I like without visiting 
 └── README.md
 ``` 
 
-# Code Block:
-* This code controls the favorites page.
-* It shows all the items you have saved as favorites.
-* If there are no favorites, it displays a message saying “No favorites yet.”
-* This is what keeps your favorites list interactive and always up-to-date while browsing.
-
-```
-document.addEventListener('click', function (e) {
-    const btn = e.target.closest('.remove-fav');
-    if (!btn) return;
-
-    let favorites = getFavorites();
-    const title = btn.dataset.title;
-
-    favorites = favorites.filter(f => f.title !== title);
-    saveFavorites(favorites);
-    render();
-});
-```
-
-# Validation
-[Click Here for Nu Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpoppydalton.github.io%2Fproject-blush-basket-shop%2F)
-
-[Click Here for WAVE Accessibility Report](https://wave.webaim.org/report#/https://poppydalton.github.io/project-blush-basket-shop/)
-
-# Future Improvements:
-[Github Milestone 👉 Sprint 99](https://github.com/poppydalton/project-blush-basket-shop/milestones)
-* Includes known issues/bugs and future improvements.
+### GCP
+external IP: `00.00.00.00`\
+Linux user: `username`\
+instructor SSH public key installed: `yes`
 
 
 
