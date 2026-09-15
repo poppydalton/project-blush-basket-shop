@@ -7,18 +7,18 @@
 
 
 ### deployments, codebase, & repo features
-resource                     link
-  ---------------------------- ----------------------
-  PROD codebase                [`main`](URL)
-  PROD server                  [GCP](URL)
-  DEV codebase                 [`dev`](URL)
-  DEV server                   [Render](URL)
-  docs                         [`docs/`](URL)
-  published docs               [GitHub Pages](URL)
-  CI/CD workflow               [`deploy.yml`](URL)
-  successful PROD deployment   [GitHub Action](URL)
-  resolved GOLF issue          [issue \#](URL)
 
+resource                     link
+---------------------------- ------------------------------------------------------------
+PROD codebase                [`main`](https://github.com/poppydalton/project-blush-basket-shop/tree/main)
+PROD server                  [GCP](https://poppy.barrycumbie.com)
+DEV codebase                 [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev)
+DEV server                   [Render](https://project-blush-basket-shop.onrender.com)
+docs                         [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/main/docs)
+published docs               [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/)
+CI/CD workflow               [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/main/.github/workflows/deploy-main-to-gcp.yml)
+successful PROD deployment   [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395)
+resolved GOLF issue          [issue #REPLACE](https://github.com/poppydalton/project-blush-basket-shop/issues/REPLACE)
 
 ### user story
 - As someone constantly looking for new clothing styles, 
@@ -26,7 +26,7 @@ resource                     link
 - so that I can easily compare options and discover items I like without visiting numerous websites.  
 
 ### narrative 
-In 2--4 sentences, briefly describe your GOLF infrastructure and whatyou built/deployed.
+BlushBasket is a clothing website where users can browse and search men's and women's clothing. I used GitHub to manage the project, with the `dev` branch deploying to Render and the `main` branch deploying to GCP through GitHub Actions.
 
 ### architecture
 ``` text
@@ -48,31 +48,29 @@ GitHub
 ### project structure
 ```
 .
-├── index.html
-├── assets
-│   ├── docs
-│   └── data
-├── pages
-│   ├── women.html
-│   ├── men.html
-│   ├── login.html
-│   ├── session.html
-│   ├── favorites.html
-│   └── search.html 
-├── scripts
-│   ├── search-script.js
-│   ├── login-script.js
-│   ├── session-script.js
-│   ├── storage.js
-│   └── login-logout.js
-├── styles
-│   └── blushbasket-styles.css
-└── README.md
+├── .github/
+│   └── workflows/
+│       └── deploy-main-to-gcp.yml
+├── docs/
+│   └── README.md
+├── public/
+│   ├── index.html
+│   └── assets/
+│       ├── data/
+│       ├── docs/
+│       ├── pages/
+│       ├── scripts/
+│       └── styles/
+├── server/
+│   ├── app.js
+│   ├── package.json
+│   └── package-lock.json
+└── .gitignore
 ``` 
 
 ### GCP
-external IP: `00.00.00.00`\
-Linux user: `username`\
+external IP: `34.118.173.217`\
+Linux user: `poppydalton545`\
 instructor SSH public key installed: `yes`
 
 
