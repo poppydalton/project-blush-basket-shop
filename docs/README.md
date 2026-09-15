@@ -8,17 +8,17 @@
 
 ### deployments, codebase, & repo features
 
-resource                     link
----------------------------- ------------------------------------------------------------
-PROD codebase                [`main`](https://github.com/poppydalton/project-blush-basket-shop/tree/main)
-PROD server                  [GCP](https://poppy.barrycumbie.com)
-DEV codebase                 [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev)
-DEV server                   [Render](https://project-blush-basket-shop.onrender.com)
-docs                         [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/main/docs)
-published docs               [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/)
-CI/CD workflow               [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/main/.github/workflows/deploy-main-to-gcp.yml)
-successful PROD deployment   [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395)
-resolved GOLF issue          [issue #REPLACE](https://github.com/poppydalton/project-blush-basket-shop/issues/REPLACE)
+| resource | link |
+|---|---|
+| PROD codebase | [`main`](https://github.com/poppydalton/project-blush-basket-shop/tree/main) |
+| PROD server | [GCP](https://poppy.barrycumbie.com/) |
+| DEV codebase | [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
+| DEV server | [Render](https://project-blush-basket-shop.onrender.com/) |
+| docs | [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/main/docs) |
+| published docs | [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/) |
+| CI/CD workflow | [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/main/.github/workflows/deploy-main-to-gcp.yml) |
+| successful PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395) |
+| resolved GOLF issue | [issue #13](https://github.com/poppydalton/project-blush-basket-shop/issues/13) |
 
 ### user story
 - As someone constantly looking for new clothing styles, 
