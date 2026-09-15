@@ -26,24 +26,15 @@ Created by Poppy Dalton
 ### Project Structure
 ```
 .
-├── index.html
+.
 ├── assets
-│   ├── docs
-│   └── data
-│   ├── men.html
-│   ├── login.html
-│   ├── session.html
-│   └── favorites.html
-│   ├── favorites.html
-│   └── search.html 
+│   ├── data
+│   └── docs
+├── pages
 ├── scripts
-│   ├── search-script.js
-│   ├── login-script.js
-│   ├── session-script.js
-│   ├── auth.js
-│   ├── storage.js
-│   └── login-logout.js
 ├── styles
+├── README.md
+└── index.html
 ``` 
 
 ### Code Block:
