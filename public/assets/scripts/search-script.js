@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const pageCategory = document.body.dataset.categoryPage;
 
-    fetch('../assets/data/clothing-data.json')
+    fetch('../data/clothing-data.json')
         .then(res => res.json())
         .then(data => {
             products = data.products;
