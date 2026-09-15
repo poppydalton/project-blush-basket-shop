@@ -26,7 +26,6 @@ Created by Poppy Dalton
 ### Project Structure
 ```
 .
-.
 ├── assets
 │   ├── data
 │   └── docs
