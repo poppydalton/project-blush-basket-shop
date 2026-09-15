@@ -27,7 +27,6 @@ Created by Poppy Dalton
 ```
 .
 ├── index.html
-├── search.html
 ├── assets
 │   ├── docs
 │   └── data
