@@ -14,7 +14,7 @@
 | PROD server | [GCP](https://poppy.barrycumbie.com/) |
 | DEV codebase | [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
 | DEV server | [Render](https://project-blush-basket-shop.onrender.com/) |
-| docs | [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/main/docs) |
+| docs | [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev/docs) |
 | published docs | [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/) |
 | CI/CD workflow | [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/main/.github/workflows/deploy-main-to-gcp.yml) |
 | successful PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395) |
