@@ -1,6 +1,8 @@
 # Blush Basket 
 > BlushBasket is a clothing shopping website that allows users to browse and search for clothing items by category. Users can explore different styles, compare items, and save their favorite products for easy access later.
 
+### [Click here to go back to dev if needed](https://github.com/poppydalton/project-blush-basket-shop/tree/dev)
+
 ### Authorship
 Created by Poppy Dalton
 
