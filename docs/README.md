@@ -21,9 +21,10 @@
 | resolved GOLF issue | [issue #13](https://github.com/poppydalton/project-blush-basket-shop/issues/13) |
 
 ### user story
-- As someone constantly looking for new clothing styles, 
-- I want to browse and search items by category, 
-- so that I can easily compare options and discover items I like without visiting numerous websites.  
+- **As a** burgeoning full-stack developer,
+- **I want** a CI/CD infrastructure
+- **so that** I can develop locally, manage my code in GitHub, and
+    automatically deploy changes to DEV and PROD environments.
 
 ### narrative 
 BlushBasket is a clothing website where users can browse and search men's and women's clothing. I used GitHub to manage the project, with the `dev` branch deploying to Render and the `main` branch deploying to GCP through GitHub Actions.
