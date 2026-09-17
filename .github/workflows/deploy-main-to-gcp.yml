@@ -30,7 +30,7 @@ jobs:
           APP_DIR: app/server
           PM2_NAME: app
         run: |
-          ssh -i ~/.ssh/id_rsa -T "$SSH_USER@$SSH_HOST" <<EOF
+          ssh -i ~/.ssh/golf-key -T "$SSH_USER@$SSH_HOST" <<EOF
             set -e
 
             cd "$APP_DIR"
