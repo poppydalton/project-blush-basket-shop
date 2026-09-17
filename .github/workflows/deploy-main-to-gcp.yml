@@ -16,8 +16,8 @@ jobs:
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
 
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/golf-key
+          chmod 600 ~/.ssh/golf-key
 
           ssh-keyscan -H 34.118.173.217 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
