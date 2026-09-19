@@ -1,7 +1,7 @@
 # BlushBasket
 > A web application for browsing clothing styles across multiple platforms in one place. 
 
-test
+
 ### authorship + version
 `@poppydalton` \| `2026-09-15` \| `GOLF`
 
