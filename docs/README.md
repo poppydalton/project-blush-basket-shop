@@ -3,22 +3,28 @@
 
 
 ### authorship + version
-`@poppydalton` \| `2026-09-15` \| `GOLF`
+`@poppydalton` \| `2026-09-29` \| `HOTEL`
 
 
 ### deployments, codebase, & repo features
 
-| resource | link |
+| requirement | evidence |
 |---|---|
-| PROD codebase | [`main`](https://github.com/poppydalton/project-blush-basket-shop/tree/main) |
-| PROD server | [GCP](https://poppy.barrycumbie.com/) |
-| DEV codebase | [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
-| DEV server | [Render](https://project-blush-basket-shop.onrender.com/) |
-| docs | [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev/docs) |
-| published docs | [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/) |
-| CI/CD workflow | [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/.github/workflows/deploy-main-to-gcp.yml) |
-| successful PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395) |
-| resolved GOLF issue | [issue #13](https://github.com/poppydalton/project-blush-basket-shop/issues/13) |
+| MongoDB connection | [server code](URL) |
+| GET all | [endpoint code](URL) |
+| GET one | [endpoint code](URL) |
+| filtered GET | [endpoint code](URL) |
+| POST / create | [endpoint code](URL) |
+| PATCH / update | [endpoint code](URL) |
+| DELETE | [endpoint code](URL) |
+| frontend `fetch()` | [client code](URL) |
+| persistent CRUD | [PROD app](URL) |
+| HOTEL milestone | [milestone](URL) |
+| example issue | [issue #](URL) |
+| development branch | [branch](URL) |
+| feature → dev | [PR #](URL) |
+| dev → main | [PR #](URL) |
+| PROD deployment | [GitHub Action](URL) |
 
 ### user story
 - **As a** burgeoning full-stack developer,
