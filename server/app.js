@@ -9,13 +9,14 @@ const app = express();
 // here is a change 
 
 app.use(express.static(join(__dirname, '../public')));
+app.use('/pages', express.static(join(__dirname, '../public/assets/pages')));
 
 // app.get('/', (req, res) => {
 //   res.send('Hello World')
 // })
 
 app.get('/', (req, res) => {
-  res.sendFile(join(__dirname, 'public', 'index.html'));
+  res.sendFile(join(__dirname, '../public/index.html'));
 })
 
 app.get('/whatever', (req, res) => {
