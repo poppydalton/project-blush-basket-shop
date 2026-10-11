@@ -33,7 +33,7 @@
 | frontend `fetch()` | [client code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/public/hotel.html) |
 | persistent CRUD | [PROD app](http://34.118.173.217:3000/hotel.html) |
 | HOTEL milestone | [milestone](https://github.com/poppydalton/project-blush-basket-shop/milestone/2?closed=1) |
-| example issue | [issue #] |
+| example issue | [issue #20](https://github.com/poppydalton/project-blush-basket-shop/issues/20) |
 | development branch | [branch](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
 | feature → dev | [PR #] |
 | dev → main | [PR #] |
