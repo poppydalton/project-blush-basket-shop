@@ -59,6 +59,8 @@ GitHub
   └── main ──► GitHub Actions ──► GCP ──► PROD
 
 CLIENT ──► fetch() ──► Express REST API ──► MongoDB Atlas
+
+feature → PR → dev → PR → main → GitHub Actions → GCP
 ```
 
 ### stack
