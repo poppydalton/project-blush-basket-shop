@@ -32,7 +32,7 @@
 | DELETE | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L167-172) |
 | frontend `fetch()` | [client code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/public/hotel.html) |
 | persistent CRUD | [PROD app](http://34.118.173.217:3000/hotel.html) |
-| HOTEL milestone | [milestone] |
+| HOTEL milestone | [milestone](https://github.com/poppydalton/project-blush-basket-shop/milestone/2?closed=1) |
 | example issue | [issue #] |
 | development branch | [branch](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
 | feature → dev | [PR #] |
