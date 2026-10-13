@@ -3,42 +3,64 @@
 
 
 ### authorship + version
-`@poppydalton` \| `2026-09-15` \| `GOLF`
+`@poppydalton` \| `2026-10-13` \| `HOTEL`
 
 
-### deployments, codebase, & repo features
+### deployments & codebase
 
-| resource | link |
+| **resource** | **link** |
 |---|---|
-| PROD codebase | [`main`](https://github.com/poppydalton/project-blush-basket-shop/tree/main) |
-| PROD server | [GCP](https://poppy.barrycumbie.com/) |
-| DEV codebase | [`dev`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
-| DEV server | [Render](https://project-blush-basket-shop.onrender.com/) |
-| docs | [`docs/`](https://github.com/poppydalton/project-blush-basket-shop/tree/dev/docs) |
-| published docs | [GitHub Pages](https://poppydalton.github.io/project-blush-basket-shop/) |
-| CI/CD workflow | [`deploy-main-to-gcp.yml`](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/.github/workflows/deploy-main-to-gcp.yml) |
-| successful PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/34873433395) |
-| resolved GOLF issue | [issue #13](https://github.com/poppydalton/project-blush-basket-shop/issues/13) |
+| main | [PROD](https://github.com/poppydalton/project-blush-basket-shop/tree/main) |
+| PROD | [GCP](http://34.118.173.217:3000/hotel.html) |
+| dev | [DEV](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
+| DEV | [DEV server](https://project-blush-basket-shop.onrender.com/) |
+| docs | [docs](https://github.com/poppydalton/project-blush-basket-shop/tree/dev/docs) |
+| CI/CD workflow | [workflow](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/.github/workflows/deploy-main-to-gcp.yml) |
+| successful PROD deployment | [GitHub Action] | 
+
+
+### HOTEL
+
+| **requirement** | **evidence** |
+|---|---|
+| MongoDB connection | [server code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js) |
+| GET all | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L71-97) |
+| GET one | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L101-117) |
+| filtered GET | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L73-97) |
+| POST / create | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L120-124) |
+| PATCH / update | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L157-164) |
+| DELETE | [endpoint code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/server/mongo.js#L167-172) |
+| frontend `fetch()` | [client code](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/public/hotel.html) |
+| persistent CRUD | [PROD app](http://34.118.173.217:3000/hotel.html) |
+| HOTEL milestone | [milestone](https://github.com/poppydalton/project-blush-basket-shop/milestone/2?closed=1) |
+| example issue | [issue #20](https://github.com/poppydalton/project-blush-basket-shop/issues/20) |
+| development branch | [branch](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
+| feature → dev | [PR #] |
+| dev → main | [PR #] |
+| PROD deployment | [GitHub Action](https://poppy.barrycumbie.com/) |
 
 ### user story
-- **As a** burgeoning full-stack developer,
-- **I want** a CI/CD infrastructure
-- **so that** I can develop locally, manage my code in GitHub, and
-    automatically deploy changes to DEV and PROD environments.
+- **As a** user,
+- **I want** to see all stored items,
+- **so that** I can view the application's persistent data.
   
 ### narrative 
 BlushBasket is a clothing website where users can browse and search men's and women's clothing. I used GitHub to manage the project, with the `dev` branch deploying to Render and the `main` branch deploying to GCP through GitHub Actions.
 
 ### architecture
-``` text
+``` 
 LOCAL
   │
   ▼
 GitHub
   │
-  ├── dev  ──► Render ─────────► DEV
+  ├── dev  ──► DEV
   │
-  └── main ──► GitHub Actions ─► GCP ──► PROD
+  └── main ──► GitHub Actions ──► GCP ──► PROD
+
+CLIENT ──► fetch() ──► Express REST API ──► MongoDB Atlas
+
+feature → PR → dev → PR → main → GitHub Actions → GCP
 ```
 
 ### stack
@@ -51,29 +73,27 @@ GitHub
 .
 ├── .github/
 │   └── workflows/
-│       └── deploy-main-to-gcp.yml
 ├── docs/
 │   └── README.md
 ├── public/
-│   ├── index.html
-│   └── assets/
-│       ├── data/
-│       ├── docs/
-│       ├── pages/
-│       ├── scripts/
-│       └── styles/
+│   ├── assets/
+│   │   ├── data/
+│   │   ├── docs/
+│   │   ├── pages/
+│   │   ├── scripts/
+│   │   └── styles/
+│   ├── hotel.html
+│   └── index.html
 ├── server/
 │   ├── app.js
+│   ├── mongo.js
 │   ├── package.json
 │   └── package-lock.json
-└── .gitignore
+├── .gitignore
+└── README.md
 ``` 
 
 ### GCP
 external IP: `34.118.173.217`\
 Linux user: `poppydalton545`\
 instructor SSH public key installed: `yes`
-
-
-
-
