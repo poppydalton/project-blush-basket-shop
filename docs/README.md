@@ -19,7 +19,7 @@
 | successful PROD deployment | [GitHub Action] | 
 
 
-### HOTEL grading dashboard
+### HOTEL
 
 | **requirement** | **evidence** |
 |---|---|
