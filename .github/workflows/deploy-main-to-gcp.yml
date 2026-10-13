@@ -15,9 +15,9 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/ // private key tbd
-          chmod 600 ~/.ssh/ //private key tbd
-          ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts        
+          printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
       - name: Deploy over SSH
@@ -28,7 +28,7 @@ jobs:
           APP_DIR: /home/poppydalton545/project-blush-basket-shop
           PM2_NAME: ${{ vars.PM2_NAME }}
         run: |
-          ssh -i ~/.ssh/ //privkey tbd -T "poppydalton545@$SSH_HOST" << EOF
+          ssh -i ~/.ssh/deploy_key -T "$SSH_USER@$SSH_HOST" << EOF
             set -e
 
             echo "WHOAMI:"
@@ -52,10 +52,9 @@ jobs:
             echo "LISTING DIRECTORY CONTENTS:"
             ls -la
 
-            git pull
-            npm ci
+            git pull --ff-only
+            npm ci --prefix server
 
-            pm2 delete "$PM2_NAME" || true
-            pm2 start -f app.mjs --name "$PM2_NAME"
+            pm2 restart "$PM2_NAME" || pm2 start server/app.js --name "$PM2_NAME"
             pm2 save
           EOF
