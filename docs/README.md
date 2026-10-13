@@ -35,8 +35,8 @@
 | HOTEL milestone | [milestone](https://github.com/poppydalton/project-blush-basket-shop/milestone/2?closed=1) |
 | example issue | [issue #20](https://github.com/poppydalton/project-blush-basket-shop/issues/20) |
 | development branch | [branch](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
-| feature → dev | [PR #] |
-| dev → main | [PR #] |
+| feature → dev | [PR #](https://github.com/poppydalton/project-blush-basket-shop/pull/21) |
+| dev → main | [PR #](https://github.com/poppydalton/project-blush-basket-shop/pull/21) |
 | PROD deployment | [GitHub Action](https://poppy.barrycumbie.com/) |
 
 ### user story
