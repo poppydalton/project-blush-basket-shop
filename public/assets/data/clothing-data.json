@@ -5,15 +5,24 @@
             "title": "Women's Striped Shirt",
             "description": "Women's striped tee from Altar'd State.",
             "category": "women",
+<<<<<<< HEAD
             "url": "https://www.altardstate.com/as/clothing/tops/blouses/royel-striped-tee/1005812803.html",
             "image": "..docs/womens-royel-striped-tee.jpg"
+=======
+            "url": "https://www.ae.com/us/en/p/aerie/clothing/loungewear/aerie-remix-henley-cropped-t-shirt/5496_4111_507?menu=cat4840006&ip=off&utm_source=google&utm_medium=pla&utm_content=aerie&utm_campaign=nogender_tops_general&utm_term=nonbrand&utm_id=20001158336&gad_source=1&gad_campaignid=20001158336&gbraid=0AAAAADovoqJyQtX8R0ewRhw84oA3iP0RL&gclid=Cj0KCQiA2bTNBhDjARIsAK89wlHcoLlrt9bYNuWMvN0R7QspcQtYZfYDn04R6f90pyrsSPSKEp4UGI4aAn3oEALw_wcB",
+            "image": "../docs/womens-aerie-stripe-shirt.jpg"
+>>>>>>> dev
         },
         {
             "title": "Women's Striped Shirt",
             "description": "Women's striped tee from Altar'd State.",
             "category": "women",
             "url": "https://www.altardstate.com/as/clothing/tops/blouses/royel-striped-tee/1005812803.html",
+<<<<<<< HEAD
             "image": "../docs/womens-aerie-stripe-shirt.jpg"
+=======
+            "image": "../docs/womens-royel-striped-tee.jpg"
+>>>>>>> dev
         },
         {
             "title": "Women's Tackle Tee Shirt",

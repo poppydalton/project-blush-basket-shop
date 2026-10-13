@@ -2,13 +2,13 @@
   "name": "y",
   "version": "1.0.0",
   "description": "> [dev project] charlie",
-  "homepage": "https://github.com/barrycumbie/fullstack-brain-bucket#readme",
+  "homepage": "https://github.com/poppydalton/project-blush-basket-shop#readme",
   "bugs": {
-    "url": "https://github.com/barrycumbie/fullstack-brain-bucket/issues"
+    "url": "https://github.com/poppydalton/project-blush-basket-shop/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barrycumbie/fullstack-brain-bucket.git"
+    "url": "git+https://github.com/poppydalton/project-blush-basket-shop.git"
   },
   "license": "ISC",
   "author": "",
@@ -22,7 +22,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "mongodb": "^7.6.0",
     "nodemon": "^3.1.14"
   }
 }
