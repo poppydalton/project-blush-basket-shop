@@ -16,7 +16,7 @@
 | DEV | [DEV server](https://project-blush-basket-shop.onrender.com/) |
 | docs | [docs](https://github.com/poppydalton/project-blush-basket-shop/tree/dev/docs) |
 | CI/CD workflow | [workflow](https://github.com/poppydalton/project-blush-basket-shop/blob/dev/.github/workflows/deploy-main-to-gcp.yml) |
-| successful PROD deployment | [GitHub Action] | 
+| successful PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/runs/38449885148) | 
 
 
 ### HOTEL
