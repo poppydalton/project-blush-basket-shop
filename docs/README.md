@@ -37,7 +37,7 @@
 | development branch | [branch](https://github.com/poppydalton/project-blush-basket-shop/tree/dev) |
 | feature → dev | [PR #](https://github.com/poppydalton/project-blush-basket-shop/pull/21) |
 | dev → main | [PR #](https://github.com/poppydalton/project-blush-basket-shop/pull/21) |
-| PROD deployment | [GitHub Action](https://poppy.barrycumbie.com/) |
+| PROD deployment | [GitHub Action](https://github.com/poppydalton/project-blush-basket-shop/actions/workflows/pages/pages-build-deployment)|
 
 ### user story
 - **As a** user,
